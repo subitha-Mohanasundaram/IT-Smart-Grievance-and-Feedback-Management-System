@@ -1,0 +1,45 @@
+# Server Configuration
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+# Spring Configuration
+spring:
+  application:
+    name: it-grievance-system
+  
+  # Database Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/it_grievance_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  
+  # Security Configuration (for development)
+  security:
+    user:
+      name: admin
+      password: admin123
+
+# JWT Configuration
+jwt:
+  secret: your-secret-key-here-change-this-in-production-make-it-very-long-and-secure
+  expiration: 86400000 # 24 hours in milliseconds
+
+# Logging
+logging:
+  level:
+    com.grievance: DEBUG
+    org.springframework.security: DEBUG
+    
