@@ -16,7 +16,7 @@ spring:
     password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
   
-  # JPA Configuration
+  # JPA Configuration 
   jpa:
     hibernate:
       ddl-auto: update
