@@ -18,10 +18,10 @@ An intelligent, streamlined platform designed to bridge the communication gap be
 
 * **Frontend**: HTML5, CSS3, JavaScript
 * **Backend**: Node.js / Express
-* **Database**: MongoDB / MySQL
+* **Database**: MySQL
 
 ---
-
+       
 ## 📁 Project Structure
 
 ```text
